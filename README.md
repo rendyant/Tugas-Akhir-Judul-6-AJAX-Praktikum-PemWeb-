@@ -5,8 +5,8 @@ content = """<div align="center">
 # 🌤️✨ **Qweather**  
 ### *Dashboard Cuaca Modern & Interaktif untuk Kota-Kota di Indonesia*
 
-<img src="darkmode.png" width="700" style="border-radius: 10px; margin: 10px 0;"/>
-<img src="lightmode.png" width="700" style="border-radius: 10px; margin: 10px 0;"/>
+<img src="\preview\darkmode.png" width="700" style="border-radius: 10px; margin: 10px 0;"/>
+<img src="\preview\lightmode.png" width="700" style="border-radius: 10px; margin: 10px 0;"/>
 
 ---
 
