@@ -1,5 +1,3 @@
-### ⚡ Animated Welcome
-<!-- HEADER -->
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?size=24&color=6A5DF7&center=true&vCenter=true&width=600&lines=Selamat+Datang+di+Qweather!;Cuaca+Real-time+untuk+Indonesia;Modern.+Smooth.+Interaktif.;Didesain+oleh+Rendy+Antono+✨"/>
 </p>
