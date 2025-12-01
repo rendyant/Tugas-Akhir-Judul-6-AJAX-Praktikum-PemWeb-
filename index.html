@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qweather - Dashboard Cuaca Modern</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <span class="logo-main">Q</span><span class="logo-accent">weather</span>
+            </div>
+            <div class="controls">
+                <button class="btn" id="unitToggle">
+                    <span>°C / °F</span>
+                </button>
+                <button class="btn" id="themeToggle">
+                    <span id="themeIcon">☀️</span>
+                    <span id="themeText">Mode Terang</span>
+                </button>
+                <button class="btn btn-primary" id="refreshBtn">
+                    <span class="refresh-icon">⟳</span>
+                    <span>Perbarui</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Status Message -->
+        <div class="status-message" id="statusMessage"></div>
+
+        <!-- Search Section -->
+        <section class="search-section">
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    class="search-input" 
+                    id="citySearch" 
+                    placeholder="Cari kota (Jakarta, Bandung, Surabaya...)"
+                    autocomplete="off"
+                >
+                <button class="search-btn" id="searchBtn">
+                    <span>🔍</span>
+                </button>
+                <div class="suggestions" id="suggestions"></div>
+            </div>
+            
+            <div class="favorites-container">
+                <h4 class="favorites-title">Kota Favorit:</h4>
+                <div class="favorites" id="favorites"></div>
+            </div>
+        </section>
+
+        <!-- Loading -->
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Memuat data cuaca...</p>
+        </div>
+
+        <!-- Main Weather Card -->
+        <section class="main-weather" id="mainWeather">
+            <div class="main-weather-bg"></div>
+            <div class="main-weather-content">
+                <div class="location-header">
+                    <div>
+                        <h1 class="location-info" id="locationInfo">--</h1>
+                        <p class="timestamp" id="timestamp">--</p>
+                    </div>
+                    <button class="btn-favorite" id="addFavoriteBtn" title="Tambah ke favorit">
+                        <span>⭐</span>
+                    </button>
+                </div>
+                
+                <div class="current-temp">
+                    <div class="temp-wrapper">
+                        <div class="temp-display" id="tempDisplay">--°</div>
+                        <div class="weather-desc" id="weatherDesc">--</div>
+                    </div>
+                    <div class="weather-icon-main" id="weatherIconMain">☀️</div>
+                </div>
+                
+                <div class="weather-stats">
+                    <div class="stat-item">
+                        <div class="stat-icon">💧</div>
+                        <div class="stat-info">
+                            <div class="stat-label">Kelembaban</div>
+                            <div class="stat-value" id="humidity">--%</div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">💨</div>
+                        <div class="stat-info">
+                            <div class="stat-label">Kecepatan Angin</div>
+                            <div class="stat-value" id="windSpeed">-- km/h</div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">🌡️</div>
+                        <div class="stat-info">
+                            <div class="stat-label">Terasa Seperti</div>
+                            <div class="stat-value" id="feelsLike">--°</div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">🎯</div>
+                        <div class="stat-info">
+                            <div class="stat-label">Tekanan</div>
+                            <div class="stat-value" id="pressure">-- hPa</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Forecast Section -->
+        <section class="forecast-section">
+            <h2 class="section-title">Prakiraan 5 Hari Kedepan</h2>
+            <div class="forecast-grid" id="forecastGrid">
+                <!-- Forecast cards will be inserted here -->
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Data cuaca dari <strong>Rendy Antono</strong> • Update otomatis setiap 5 menit</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
