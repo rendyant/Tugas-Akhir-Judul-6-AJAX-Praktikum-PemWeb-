@@ -14,17 +14,8 @@
 </p>
 
 ---
----
 
-# 🌤️✨ **Qweather**  
-### *Dashboard Cuaca Modern & Interaktif untuk Kota-Kota di Indonesia*
-
-<img src="\preview\darkmode.png" width="700" style="border-radius: 10px; margin: 10px 0;"/>
-<img src="\preview\lightmode.png" width="700" style="border-radius: 10px; margin: 10px 0;"/>
-
----
-
-### 🚀 *Clean • Responsive • Real-time • Indonesia Only*  
+### 🚀 *Clean • Responsive • Real-time*  
 
 </div>
 
