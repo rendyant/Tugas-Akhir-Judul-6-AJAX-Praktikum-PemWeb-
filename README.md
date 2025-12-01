@@ -1,79 +1,60 @@
 from pathlib import Path
 
-content = """# 🎉 Qweather — Website Dashboard Cuaca Modern (Indonesia Only)
+content = """<div align="center">
 
-Qweather adalah website dashboard cuaca yang dirancang untuk menampilkan informasi cuaca real-time secara akurat untuk kota-kota di Indonesia. Tampilan modern, mode gelap/terang, serta fitur pencarian kota membuat aplikasi ini nyaman digunakan baik di laptop maupun perangkat mobile.
+# 🌤️✨ **Qweather**  
+### *Dashboard Cuaca Modern & Interaktif untuk Kota-Kota di Indonesia*
 
----
-
-## 🌗 Tampilan Website
-
-### 🔥 Dark Mode
-![Dark Mode](darkmode.png)
-
-### ☀️ Light Mode
-![Light Mode](lightmode.png)
+<img src="darkmode.png" width="700" style="border-radius: 10px; margin: 10px 0;"/>
+<img src="lightmode.png" width="700" style="border-radius: 10px; margin: 10px 0;"/>
 
 ---
 
-## ✨ Fitur Utama
+### 🚀 *Clean • Responsive • Real-time • Indonesia Only*  
 
-- 🔍 **Pencarian kota Indonesia** menggunakan Geocoding API  
-- 🌡️ **Cuaca real-time** (suhu, kelembaban, angin, tekanan udara)  
-- ☔ **Prakiraan cuaca 5 hari ke depan**  
-- ⭐ **Favoritkan kota** untuk akses cepat  
-- 🔁 **Konversi suhu otomatis (°C ↔ °F)**  
-- 🌙/☀️ **Dark Mode & Light Mode**  
-- 🗂️ **LocalStorage** untuk menyimpan data favorit  
-- ⚡ UI smooth, minimalis, dan responsif  
+</div>
 
 ---
 
-## 🛠️ Teknologi yang Digunakan
+## 🎯 **Apa itu Qweather?**
 
-Website ini dibuat menggunakan teknologi web standar tanpa framework berat, sehingga loading cepat dan mudah untuk dikembangkan:
+Qweather adalah aplikasi web sederhana namun powerful untuk menampilkan cuaca **real-time** di seluruh kota di Indonesia.  
+Didesain dengan tampilan modern, halus, dan user-friendly, Qweather hadir sebagai dashboard cuaca yang bisa kamu pakai setiap hari—baik di HP maupun laptop.
 
-- **HTML5** — struktur halaman  
-- **CSS3** — style modern + gradient + animasi  
-- **JavaScript (Vanilla)** — logika aplikasi  
-- **Open-Meteo Weather API** — data cuaca real-time  
-- **Open-Meteo Geocoding API** — pencarian kota Indonesia  
-- **LocalStorage** — penyimpanan favorit  
-- Tanpa backend, sehingga bisa di-hosting di platform static hosting seperti Netlify/Vercel/GitHub Pages.
+Selain tampilannya yang estetik, Qweather juga memanfaatkan **Open-Meteo API**, sehingga data cuaca akurat tanpa perlu API key tambahan.
 
 ---
 
-## 🚀 Cara Menjalankan
+## 🌈 **Fitur Unggulan**
 
-1. Download atau clone project ini.  
-2. Pastikan file `index.html`, `style.css`, dan `script.js` berada dalam satu folder.  
-3. Buka **index.html** melalui browser favoritmu.  
-4. Selesai — website berjalan tanpa instalasi tambahan.
-
-Untuk hosting:
-- Upload folder ke **Netlify**, **Vercel**, atau **GitHub Pages**.
-
----
-
-## 🧠 Tentang Proyek
-
-Qweather dibuat untuk menghadirkan pengalaman membaca cuaca yang:
-
-- Minimalis  
-- Cepat  
-- Akurat  
-- Fokus pada kota-kota Indonesia  
-
-Tujuan utamanya adalah membuat aplikasi cuaca yang mudah dipakai sehari-hari, dengan tampilan estetik dan informatif.
+✨ *Smooth, minimalistic, and interactive UI*  
+⚡ Real-time weather update  
+🔍 Pencarian kota Indonesia super akurat (menggunakan geocoding)  
+🌡️ Suhu + “Feels like”  
+💨 Kecepatan angin  
+💧 Kelembaban  
+🎯 Tekanan udara  
+⭐ Favorit kota (tersimpan di LocalStorage)  
+🌓 Mode Gelap & Terang (dengan transisi lembut)  
+🔁 Refresh otomatis  
+📱 Full responsive design  
 
 ---
 
-## 💛 Kredit
-Didesain & dikembangkan oleh **Rendy Antono**.
+## 🛠️ **Teknologi yang Digunakan**
 
-Feel free untuk mengembangkan, memodifikasi, atau menjadikannya dasar project lain.
+| Teknologi | Fungsi |
+|----------|--------|
+| **HTML5** | Struktur halaman |
+| **CSS3** | UI/UX, animasi, responsive design |
+| **JavaScript (Vanilla)** | Logic, fetch API, DOM interaction |
+| **Open-Meteo Weather API** | Data cuaca real-time |
+| **Open-Meteo Geocoding API** | Pencarian kota Indonesia |
+| **LocalStorage** | Menyimpan kota favorit |
 
-"""
+---
 
-Path("/mnt/data/README.md").write_text(content, encoding="utf-8")
-"/mnt/data/README.md created"
+## 🌀 **Sedikit Animasi (Simulasi di README)**
+
+> *Karena GitHub README tidak mendukung animasi langsung, berikut versi "imitasi" yang menggambarkan transisi Qweather:*
+
