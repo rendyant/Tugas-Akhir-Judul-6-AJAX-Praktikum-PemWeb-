@@ -1,6 +1,19 @@
 ### ⚡ Animated Welcome
-<img src="https://readme-typing-svg.herokuapp.com?size=24&color=6A5DF7&center=true&vCenter=true&width=600&lines=Selamat+Datang+di+Qweather!;Cuaca+Real-time+untuk+Indonesia;Modern.+Smooth.+Interaktif.;Didesain+oleh+Rendy+Antono+✨"/>
+<!-- HEADER -->
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?size=24&color=6A5DF7&center=true&vCenter=true&width=600&lines=Selamat+Datang+di+Qweather!;Cuaca+Real-time+untuk+Indonesia;Modern.+Smooth.+Interaktif.;Didesain+oleh+Rendy+Antono+✨"/>
+</p>
 
+<h1 align="center">🌤️✨ Qweather</h1>
+<p align="center"><i>Dashboard Cuaca Modern & Interaktif untuk Kota-Kota di Indonesia</i></p>
+
+<p align="center">
+  <img src="preview/darkmode.png" width="650" style="border-radius:12px;"/>
+  <br/>
+  <img src="preview/lightmode.png" width="650" style="border-radius:12px; margin-top:10px;"/>
+</p>
+
+---
 ---
 
 # 🌤️✨ **Qweather**  
