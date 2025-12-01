@@ -1,6 +1,7 @@
-from pathlib import Path
+### ⚡ Animated Welcome
+<img src="https://readme-typing-svg.herokuapp.com?size=24&color=6A5DF7&center=true&vCenter=true&width=600&lines=Selamat+Datang+di+Qweather!;Cuaca+Real-time+untuk+Indonesia;Modern.+Smooth.+Interaktif.;Didesain+oleh+Rendy+Antono+✨"/>
 
-content = """<div align="center">
+---
 
 # 🌤️✨ **Qweather**  
 ### *Dashboard Cuaca Modern & Interaktif untuk Kota-Kota di Indonesia*
@@ -19,9 +20,8 @@ content = """<div align="center">
 ## 🎯 **Apa itu Qweather?**
 
 Qweather adalah aplikasi web sederhana namun powerful untuk menampilkan cuaca **real-time** di seluruh kota di Indonesia.  
-Didesain dengan tampilan modern, halus, dan user-friendly, Qweather hadir sebagai dashboard cuaca yang bisa kamu pakai setiap hari—baik di HP maupun laptop.
 
-Selain tampilannya yang estetik, Qweather juga memanfaatkan **Open-Meteo API**, sehingga data cuaca akurat tanpa perlu API key tambahan.
+Qweather juga memanfaatkan **Open-Meteo API**, sehingga data cuaca akurat tanpa perlu API key tambahan.
 
 ---
 
@@ -30,7 +30,7 @@ Selain tampilannya yang estetik, Qweather juga memanfaatkan **Open-Meteo API**, 
 ✨ *Smooth, minimalistic, and interactive UI*  
 ⚡ Real-time weather update  
 🔍 Pencarian kota Indonesia super akurat (menggunakan geocoding)  
-🌡️ Suhu + “Feels like”  
+🌡️ Suhu 
 💨 Kecepatan angin  
 💧 Kelembaban  
 🎯 Tekanan udara  
@@ -50,11 +50,10 @@ Selain tampilannya yang estetik, Qweather juga memanfaatkan **Open-Meteo API**, 
 | **JavaScript (Vanilla)** | Logic, fetch API, DOM interaction |
 | **Open-Meteo Weather API** | Data cuaca real-time |
 | **Open-Meteo Geocoding API** | Pencarian kota Indonesia |
-| **LocalStorage** | Menyimpan kota favorit |
 
 ---
 
-## 🌀 **Sedikit Animasi (Simulasi di README)**
+## 💛 **Kredit**
+Dibuat oleh **Rendy Antono** untuk memenuhi tugas akhir praktikum pemrograman web judul 6.
 
-> *Karena GitHub README tidak mendukung animasi langsung, berikut versi "imitasi" yang menggambarkan transisi Qweather:*
 
