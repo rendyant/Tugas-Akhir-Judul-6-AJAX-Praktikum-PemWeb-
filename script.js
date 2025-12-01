@@ -1,6 +1,3 @@
-// =========================
-// STATE
-// =========================
 const state = {
     currentUnit: 'metric',
     currentCity: 'Jakarta',
@@ -13,7 +10,6 @@ const state = {
     ]
 };
 
-// ICONS & DESCRIPTIONS
 const weatherIcons = {
     0: '☀️', 1: '🌤️', 2: '⛅', 3: '☁️',
     45: '🌫️', 48: '🌫️',
@@ -52,9 +48,6 @@ const weatherDescriptions = {
     99: 'Badai Petir dengan Hujan Es Lebat'
 };
 
-// =========================
-// INIT
-// =========================
 function init() {
     loadFavorites();
     fetchWeatherData(state.currentCoords, state.currentCity);
@@ -62,9 +55,6 @@ function init() {
     setupEventListeners();
 }
 
-// =========================
-// EVENT LISTENERS
-// =========================
 function setupEventListeners() {
     document.getElementById('searchBtn').addEventListener('click', handleSearch);
     document.getElementById('citySearch').addEventListener('keypress', e => {
@@ -85,10 +75,6 @@ function setupEventListeners() {
         }
     });
 }
-
-// =========================
-// SEARCH (INDONESIA ONLY)
-// =========================
 
 async function handleSearchInput(e) {
     const query = e.target.value.trim();
@@ -145,9 +131,6 @@ async function handleSearch() {
     }
 }
 
-// =========================
-// SELECT CITY
-// =========================
 function selectCity(name, lat, lon) {
     state.currentCity = name;
     state.currentCoords = { lat, lon };
@@ -158,9 +141,6 @@ function selectCity(name, lat, lon) {
     fetchWeatherData({ lat, lon }, name);
 }
 
-// =========================
-// FETCH WEATHER DATA
-// =========================
 async function fetchWeatherData(coords, cityName) {
     showLoading(true);
     hideStatus();
@@ -199,9 +179,6 @@ async function fetchWeatherData(coords, cityName) {
     }
 }
 
-// =========================
-// UPDATE CURRENT WEATHER
-// =========================
 function updateCurrentWeather(data, cityName) {
     const c = data.current;
     const unit = state.currentUnit === 'metric' ? '°C' : '°F';
@@ -230,9 +207,6 @@ function updateCurrentWeather(data, cityName) {
     document.getElementById('pressure').textContent = `${Math.round(c.surface_pressure)} hPa`;
 }
 
-// =========================
-// UPDATE FORECAST
-// =========================
 function updateForecast(data) {
     const daily = data.daily;
     const unit = state.currentUnit === 'metric' ? '°C' : '°F';
@@ -271,9 +245,6 @@ function updateForecast(data) {
     document.getElementById('forecastGrid').innerHTML = html;
 }
 
-// =========================
-// FAVORITES
-// =========================
 function loadFavorites() {
     document.getElementById('favorites').innerHTML =
         state.favoriteCities.map(c => `
@@ -308,9 +279,6 @@ function removeFavorite(name) {
     showStatus("Dihapus dari favorit", "success");
 }
 
-// =========================
-// MISC
-// =========================
 function toggleUnit() {
     state.currentUnit = state.currentUnit === 'metric' ? 'imperial' : 'metric';
     fetchWeatherData(state.currentCoords, state.currentCity);
